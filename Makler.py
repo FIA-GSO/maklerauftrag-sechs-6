@@ -31,11 +31,11 @@ while Zähler < Räume:
         if Zähler1 >= Rechtecke:
             break
     # Schreiben der Ergebnisse in eine Text Datei
-    with open ("Berechnung.txt", "a", encoding="utf=-8") as f:
+    with open ("Berechnung.txt", "a", encoding="utf-8") as f:
         f.write(f"Name: {Raumname}\n")
         f.write(f"Raumfläche: {Fläche}\n")
         f.write("\n")
     Gesamtfläche += Fläche
     Zähler = Zähler + 1
-with open ("Berechnung.txt", "a", encoding="utf=-8") as f:
+with open ("Berechnung.txt", "a", encoding="utf-8") as f:
     f.write(f"Gesamtfläche der Wohnung: {Gesamtfläche}\n")
