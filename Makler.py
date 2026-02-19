@@ -1,7 +1,12 @@
+def schreibe_ueberschrift(datei, text):
+    datei.write(text + "\n")
+    datei.write("-" * len(text) + "\n\n")
+
+
 print("Grundflächenberechnung einer Wohnung")
 # Erstellen einer Text Datei
 with open ("Berechnung.txt", "w", encoding="utf-8") as f:
-    f.write("Räume:\n")
+    schreibe_ueberschrift(f, "Räume: ")
     f.write("\n")
 Räume = int(input("Anzahl der Räume eingeben: "))
 Zähler = 0
