@@ -32,10 +32,10 @@ while Zähler < Räume:
             break
     # Schreiben der Ergebnisse in eine Text Datei
     with open ("Berechnung.txt", "a", encoding="utf-8") as f:
-        f.write(f"Name: {Raumname}\n")
-        f.write(f"Raumfläche: {Fläche}\n")
+        f.write(f"Raumname: {Raumname}\n")
+        f.write(f"Raumfläche: {Fläche} m\u00B2\n")
         f.write("\n")
     Gesamtfläche += Fläche
     Zähler = Zähler + 1
 with open ("Berechnung.txt", "a", encoding="utf-8") as f:
-    f.write(f"Gesamtfläche der Wohnung: {Gesamtfläche}\n")
+    f.write(f"Gesamtfläche der Wohnung: {Gesamtfläche} m\u00B2\n")
