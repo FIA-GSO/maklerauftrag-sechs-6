@@ -2,10 +2,9 @@ def schreibe_ueberschrift(datei, text):
     datei.write(text + "\n")
     datei.write("-" * len(text) + "\n\n")
 
+print("Grundflächenberechnung einer Wohnung")
 pfad = str(input("Wählen sie einen Speicherort: "))
 pfad = pfad + "\\Berechnung_Test.txt"
-
-print("Grundflächenberechnung einer Wohnung")
 # Erstellen einer Text Datei
 Räume = int(input("Anzahl der Räume eingeben: "))
 with open (pfad, "w", encoding="utf-8") as f:
